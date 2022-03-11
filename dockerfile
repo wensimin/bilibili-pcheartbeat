@@ -8,4 +8,4 @@ WORKDIR /app
 COPY --from=build /src /app
 ENV LOG_LEVEL=INFO
 HEALTHCHECK CMD ["pidof", "node"]
-ENTRYPOINT [ "node", "app.js","4000" ]
+ENTRYPOINT [ "node", "app.js", "-p" ,"4000" ]

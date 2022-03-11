@@ -1,9 +1,9 @@
 version: '3'
 services:
 
-  haproxy:
+  heart-api:
     build: .
     restart: always
     container_name: bilibili-heart-enc
     ports:
-      - 127.0.0.1:4000:4000
+      - "127.0.0.1:4000:4000"
